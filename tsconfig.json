@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "declaration": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es6",
+        "lib": [
+            "es2017.object",
+            "es2017",
+            "es2016",
+            "es2015",
+            "es2015.promise",
+            "dom"
+        ],
+        "noImplicitAny": false, // 為了修正`node_modules/firebase-functions/lib/cloud-functions.d.ts(62,58): error TS7006: Parameter 'any' implicitly has an 'any' type.`
+        "outDir": "dist",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "files": [
+        "src/index.ts"
+    ]
+}
